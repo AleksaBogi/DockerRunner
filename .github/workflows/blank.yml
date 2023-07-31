@@ -20,6 +20,8 @@ jobs:
     # The type of runner that the job will run on
     runs-on:
     - test-label1
+    container:
+      image: node:14.16
     
 
     # Steps represent a sequence of tasks that will be executed as part of the job
