@@ -22,3 +22,4 @@ jobs:
           - name: Log the Vm 
             run: |
               cat /etc/os-release
+              sleep 50
