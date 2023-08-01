@@ -60,9 +60,8 @@ jobs:
               echo 'add value2' >> fajl2.txt
               git add fajl2.txt
               git commit -m 'Modifikovan fajl2'
+              git push
               sleep 30
-     - name: push
-       run: |
-            git push
+     
             
        
