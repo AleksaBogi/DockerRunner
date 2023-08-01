@@ -47,4 +47,13 @@ jobs:
                   pip install ruff pytest
                   python sample.py
                   sleep 50
+      
+  modifying_file:
+     runs-on: ubuntu-latest
+     steps:
+     - name: checkout
+       uses: actions/checkout@v2
+     - name: modifying value
+       run: |
+             echo 'add value2' >> fajl2.txt
        
