@@ -1,5 +1,9 @@
 name: container
 on: push
+env:
+    DAY: Wednesday
+    NAME: Aleksa
+    
 
 jobs:
   node-docker:
@@ -11,7 +15,13 @@ jobs:
            run: |
              node -v
              cat /etc/os-release
-   
+ 
+  presentation:
+     runs-on: ubuntu-latest
+     steps:
+           - name: Information
+             run: echo "$NAME is giving a presenation on $DAY!"
+  
   docker:
     runs-on:
     - self-hosted
