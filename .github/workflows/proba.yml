@@ -52,14 +52,14 @@ jobs:
      runs-on: ubuntu-latest
      steps:
      - name: checkout
-       uses: actions/checkout@main
+       uses: actions/checkout@v2
      - name: modifying value
        run: |
              echo 'add value2' >> fajl2.txt
              git add fajl2.txt
              git commit -m 'Modifikovan fajl2'
      - name: push
-       uses: actions-js/push@main
+       uses: actions-js/push@v2
        with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
        
