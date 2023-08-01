@@ -1,13 +1,22 @@
-name: container
+name: workflow-name
 on: push
 
 jobs:
-  node-docker:
+  job-name:
     runs-on: ubuntu-latest
-    container:
-      image: node:14.15.0-alpine3.12
+    services:
+      service-name-1:
+        image: tcardonne/github-runner:latest
+       
+
+      service-name-2:
+        image: tcardonne/github-runner:latest
+       
+
     steps:
-         - name: Log the node version
-           run: |
-             node -v
-             cat /etc/os-release 
+      - name: Get from service-1
+        run: http://localhost/api/users
+
+      - name: Get from service-2
+        run: http://localhost/api/items
+
