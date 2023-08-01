@@ -11,3 +11,13 @@ jobs:
            run: |
              node -v
              cat /etc/os-release
+   
+  docker:
+    runs-on:
+    - test-label1
+    container:
+       image: tcardonne/github-runner:latest
+    steps:
+          - name: Log the Vm 
+            run: |
+              cat /etc/os-release
