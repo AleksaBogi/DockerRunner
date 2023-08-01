@@ -60,13 +60,7 @@ jobs:
               echo 'add value2' >> fajl2.txt
               git add fajl2.txt
               git commit -m 'Modifikovan fajl2'
-     - name: push
-       uses:  git config --global user.email "Aleksa.Bogdanovic@avisto-eastern.com"
-              git config --global user.name "AleksaBogi"  
-              ad-m/github-push-action@master
-       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+     
              
           
      
