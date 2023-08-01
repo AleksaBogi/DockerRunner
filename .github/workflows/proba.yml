@@ -1,0 +1,12 @@
+name: CI
+
+on: [push]
+
+jobs:
+  myjob:
+     runs-on: CentOS:7
+     steps:
+     - run: ls
+     - run: echo $HOME
+     - name: Add a file
+       run: touch $HOME/stuff.txt
