@@ -15,8 +15,8 @@ jobs:
 
     steps:
       - name: Get from service-1
-        run: http://localhost/
+        run: http://192.168.10.200/
 
       - name: Get from service-2
-        run: http://localhost/
+        run: http://192.168.10.200/
 
