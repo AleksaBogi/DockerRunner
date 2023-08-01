@@ -59,7 +59,7 @@ jobs:
              git add fajl2.txt
              git commit -m 'Modifikovan fajl2'
      - name: push
-       uses: actions-js/push@v2
+       uses: actions-js/push@master
        with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
        
