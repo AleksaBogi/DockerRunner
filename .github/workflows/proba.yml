@@ -62,8 +62,7 @@ jobs:
               git commit -m 'Modifikovan fajl2'
               sleep 30
      - name: push
-       uses: actions-js/push@master
-       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-       
+       run: |
+            git push
+            
        
