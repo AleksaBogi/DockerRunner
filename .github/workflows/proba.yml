@@ -60,6 +60,9 @@ jobs:
               echo 'hello world' >> fajl1.txt
               git add fajl1.txt
               git commit -m 'Modifikovan fajl1'
+              echo 'Hello world' >> fajl2.txt
+              git add fajl2.txt
+              git commit -m 'Modifikovan fajl2'
               git push
      
              
