@@ -3,3 +3,4 @@ add value
 add value
 Hello world
 Pozcdrav
+dodat tekst
