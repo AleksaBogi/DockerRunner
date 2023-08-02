@@ -3,3 +3,4 @@ add value
 hello world
 hello world
 pozdrav
+dodat tekst
