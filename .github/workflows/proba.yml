@@ -57,10 +57,10 @@ jobs:
        run: |
               git config --global user.email "Aleksa.Bogdanovic@avisto-eastern.com"
               git config --global user.name "AleksaBogi"
-              echo 'dodat tekst' >> fajl1.txt
+              echo 'dodat tekst 2' >> fajl1.txt
               git add fajl1.txt
               git commit -m 'Modifikovan fajl1'
-              echo 'dodat tekst' >> fajl2.txt
+              echo 'dodat tekst 2' >> fajl2.txt
               git add fajl2.txt
               git commit -m 'Modifikovan fajl2'
               git push
