@@ -5,3 +5,4 @@ hello world
 pozdrav
 dodat tekst
 dodat tekst 2
+dodat tekst 2
